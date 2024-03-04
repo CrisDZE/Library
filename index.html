@@ -1,1 +1,39 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Library</title>
+</head>
+<body>
+  <header>
+    <h1 id="page-title">Library</h1>
+  </header>
+  <main>
+    <div id="add-book">
+      <form>
+        <input id="add-book-name"type=text placeholder="Book name" class="input name">
+        <input id="add-book-author"type=text placeholder="Author name" class="input author">
+        <input id="add-book-pages" type=number placeholder="Total pages" class="input pages">
+        <span>
+          <label for="add-book-read">Read?</label>
+          <select id="add-book-read">
+            <option value="true">Yes</option>
+            <option value="">No</option>
+          </select>
+        </span>
+        <button type="button" id="add-book-button">Add book</button>
+      </form>
+    </div>
+    <h2>Books</h2>
+    <div id="library-main-container" class="container main library">
+    </div>
+  </main>
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</body>
+</html>
