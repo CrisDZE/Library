@@ -1,1 +1,113 @@
+body {
+  margin: 0 auto;
+  background-color:  #DBD2E0;
+}
+  header{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color:#7B904B;
+  color:#002400;
+  
+  height: 10vh;
+  
+  border-bottom: solid 1vh #58641D;
+  
+  font-size:3vh;
+}
+    h1{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+h2{
+  display:flex;
+  justify-content: center;
+  color:#002400;
+  align-items: center;
+  font-size:7vh;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+margin: 0;
+  
+}
+  main{
+    display: grid;
+    margin-left: 15vw;
+    margin-right:15vw;
+    grid-template-columns: 70vw;
+    grid-template-rows: 10vh auto;
+  }
+    form{
+      grid-row:1;
 
+      display:flex;
+      justify-content:space-around;
+      align-items:center;
+
+      margin:0 auto;
+      height: 6vh;
+      max-width: 790px;
+      min-width: 790px;
+      
+      background-color:#7B904B;
+      border:2px solid #58641D;
+}
+    .main{
+      margin: 0 auto;
+      
+      min-width:600px;
+      max-width:600px;
+      
+      background-color:#7B904B;
+      border: 5px solid #58641D;
+}
+#book-container{
+  border-bottom: 1vh solid #58641D;
+  display:grid;
+  grid-template-columns: 175px auto auto;
+  grid-template-rows: 20px 20px 20px 20px 80px;
+}
+#book-container p{
+  grid-column: 2
+}
+#book-container img {
+  grid-row: 1/end;
+  max-width: 150px;
+  margin: 2%;
+}
+button{
+  color:white;
+  background-color:#58641D;
+  border:2px solid #58641D;
+  border-radius:5px;
+  cursor:pointer;
+  font-weight:bold;
+}
+button:hover{
+  color:#58641D;
+  background-color: #DBD2E0;
+  border: solid 2px #58641D;
+  font-weight:bold;
+}
+.remove-book-button{
+  grid-column: 3;
+  grid-row: 1;
+}
+#book-container button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width:75px;
+  max-height:20px;
+  margin:1%;
+}
+.toggle-read-button{
+  grid-column:3;
+  grid-row:2;
+  min-width:150px;
+}
