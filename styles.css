@@ -72,13 +72,30 @@ margin: 0;
   grid-template-columns: 175px auto auto;
   grid-template-rows: 20px 20px 20px 20px 80px;
 }
-#book-container p{
-  grid-column: 2
-}
 #book-container img {
   grid-row: 1/end;
   max-width: 150px;
   margin: 2%;
+}
+#book-container p{
+  grid-column: 2
+}
+#book-container button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  max-width:75px;
+  max-height:20px;
+  margin:1%;
+}
+.remove-book-button{
+  grid-column: 3;
+  grid-row: 1;
+}
+.toggle-read-button{
+  grid-column:3;
+  grid-row:2;
+  min-width:150px;
 }
 button{
   color:white;
@@ -93,21 +110,4 @@ button:hover{
   background-color: #DBD2E0;
   border: solid 2px #58641D;
   font-weight:bold;
-}
-.remove-book-button{
-  grid-column: 3;
-  grid-row: 1;
-}
-#book-container button{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  max-width:75px;
-  max-height:20px;
-  margin:1%;
-}
-.toggle-read-button{
-  grid-column:3;
-  grid-row:2;
-  min-width:150px;
 }
